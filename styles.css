@@ -1,0 +1,261 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --vermelho-padrao: #8E2424;
+    --preto-principal: #101828;
+    --cinza-secundario: #667085;
+    --fundo-cinza: #D0D5DD;
+    --fundo-vagas: #8e24240d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Cabeçalho */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.lista__links a {
+    color: var(--cinza-secundario);
+    text-decoration: none;
+    margin-right: 32px;
+}
+
+button {
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    background-color: transparent;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+
+.botao__cadastrar {
+    background-color: var(--vermelho-padrao);
+    color: var(--branco-principal);
+}
+
+/* Sobre Nós */
+
+.sobre__nos {
+    text-align: center;
+    padding: 96px;
+}
+
+.sobre__nos span {
+    color: var(--vermelho-padrao);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.sobre__nos h1 {
+    display: block;
+    color: var(--preto-principal);
+    font-size: 48px;
+    margin: 24px 0;
+    
+}
+
+.sobre__nos p {
+    color: var(--cinza-secundario);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Metricas */
+
+.metricas__container {
+    display: flex;
+    padding: 0 80px 94px;
+}
+
+.metricas {
+    margin-right:32px;
+}
+
+.metricas span {
+    color: var(--vermelho-padrao);
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.metricas h3 {
+    color: var(--preto-principal);
+    font-size: 18px;
+    font-weight: 500;
+    margin: 12px 0 8px 0;
+}
+
+.metricas p {
+    color: var(--cinza-secundario);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Talentos */
+
+.talentos__container {
+    text-align: center;
+    padding: 6em 0 0 0;
+}
+
+.vagas__abertas span{
+    background-color: var(--fundo-vagas);
+    padding: 0.5em; 
+    color: var(--vermelho-padrao);
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 6em;
+}
+
+.vagas__abertas h1 {
+    color: var(--preto-principal);
+    font-size: 36px;
+    font-weight: 600;
+    margin: 16px 0 20px 0;
+}
+
+.vagas__abertas p {
+    color: var(--cinza-secundario);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 4em;
+}
+
+/* Vagas */
+
+.vagas__container {
+    margin: 0 336px 96px 336px;
+}
+
+.area__vaga {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 64px;
+    margin-bottom: 32px;
+    color: var(--preto-principal);    
+}
+
+.vaga {
+    border: 1px solid #EAECF0;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    max-width: 768px;
+    margin-bottom: 24px;
+    color: var(--preto-principal);
+}
+
+.titulo__vaga {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.informacoes {
+    margin-top: 1rem;
+    font-size: 90%;
+    font-weight: 500;
+    color: var(--cinza-secundario);
+    display: flex;
+    gap: 2em;
+}
+
+/* Seção de depoimentos */
+
+.depoimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    margin: 8rem auto;
+    background-color: rgba(195, 25, 25, 0.05);
+    padding: 64px;
+    border-radius: 1rem;
+}
+
+.depoimentos span {
+    text-align: center;
+    color: var(--vermelho-padrao);
+    font-weight: 600;
+}
+
+.depoimentos img {
+    width: 48px;
+}
+
+.depoimentos h2 {
+    text-align: center;
+    font-weight: 500;
+    color: var(--preto-principal);
+    margin: 1rem 0;
+}
+
+.depoimentos span.nome {
+    color: var(--preto-principal);
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+
+.depoimentos span.cargo {
+    color: var(--cinza-secundario);
+    font-weight: 400;
+}
+
+/* Rodapé */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #F9FAFB;
+    padding: 96px 16px;
+    gap: 32px;
+}
+
+footer h2 {
+    color: var(--preto-principal);
+    font-weight: 600;
+    font-size: 36px;
+}
+
+footer p {
+    color: var(--cinza-secundario);
+}
+
+footer form {
+    display: flex;
+    justify-content: center;
+}
+
+footer input {
+    border: 1px solid #EAECF0;
+    border-radius: 0.5rem;
+    width: 360px;
+    padding: 12px 16px;
+    margin-right: 16px;
+}
+
+footer button {
+    background-color: var(--vermelho-padrao);
+    color: var(--branco-principal);
+}
+
+footer span {
+    color: #98A2B3;
+}
